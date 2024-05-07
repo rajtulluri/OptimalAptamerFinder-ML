@@ -234,12 +234,14 @@ class SequenceLibrary():
         # Convert df list into a pandas dataframe
         df = pd.DataFrame(df, columns=['seq'])
         # Create the counts_df which contains the number oc occurrences of each unique aptamer
-        counts_df = pd.DataFrame(df['seq'].value_counts()).rename(columns={'seq': 'counts'})
+        counts_df = pd.DataFrame(df['seq'].value_counts()).rename(columns={'count': 'counts'})
+        # counts_df.reset_index(inplace= True)
         # Extract som other values from the dataframe
+        
         counts_df['seqs'] = counts_df.index.to_numpy()
         counts_df['freq'] = counts_df['counts'] / counts_df['counts'].sum()
         counts_df = counts_df.reset_index().sort_values(by=['freq'], ascending=False)
-        counts_df.drop(columns=['index'], inplace=True)
+        # counts_df.drop(columns=['index'], inplace=True)
         freq = counts_df['freq'].tolist()
         cum_freq = []
         for i in range(0, len(freq)):
@@ -410,6 +412,7 @@ class SequenceLibrary():
             df = self.get_count_single_run(binding_target, rnd)
         else:
             df = self.get_count_single_run(binding_target, rnd).head(top_k)
+
         # Get squences and counts as lists. Also initialize an empty list to store the seqids
         sequences = df['seqs'].tolist()
         counts = df['counts'].tolist()
@@ -427,8 +430,10 @@ class SequenceLibrary():
                                               }
         # Add the data to the info dictionary
         print(f"Adding data for {binding_target} from round {rnd} to library")
+        # print(sequences)
         for i in tqdm(range(0, len(sequences))):
-            sequence = primers[0] + sequences[i] + primers[1] # Add primers to the sequence
+            sequence = str(primers[0]) + str(sequences[i]) + str(primers[1]) # Add primers to the sequence
+            # print("THIS", primers[0], sequences[i], primers[1])
             seqid = hashlib.sha1(str(sequence).encode('utf8')).hexdigest()[:10] # Generate seqid with a hash
             seqids.append(seqid) # Add seqid to the list of seqids
             if seqid in self.sequences.keys(): # If seqid is already in the library (this can happen if the aptamer appeared
@@ -585,6 +590,7 @@ class SequenceLibrary():
             print(alignment_records.keys())
             print(alignment_records[binding_target].keys())
             clusters = alignment_records[binding_target][rnd]
+
         num_apts = sum([len(clusters[cluster]) for cluster in clusters])
         total_counts = sum(
             [sum([self.sequences[seqid].rounds[binding_target][rnd] for seqid in clusters[cluster]]) for cluster in
@@ -874,7 +880,8 @@ def generate_all_recommendations(binding_targets):
         elif binding_target == 'oxytetracycline':
             rnds = [17, 21]
         elif binding_target == 'theophylline':
-            rnds = ['06', 10, 12, 15, 16, 18, 20, 22]
+            # rnds = ['06', 10, 12, 15, 16, 18, 20, 22]
+            rnds = [22]
         elif binding_target == 'uricacid':
             rnds = [16, 18]
         elif binding_target == 'ampicillin':

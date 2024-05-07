@@ -1,0 +1,20 @@
+seq0 (   0)| b074c0c59c | GATTGTGGTCTATTCATAGGCGTCCGCTGA | ....((((((((....))))...))))... | 151.28961249684141  --> {'22': 12339} 
+seq1 (   1)| 562c64ff11 | GGTTTGGTCTATTCATAGGCGTCCGGGTGA | ((....(((((....)))))..))...... | 146.80460220565595  --> {'22': 7782} 
+seq2 (   4)| f0bb26117d | GGTTTGGTCTATTCATAGGCGTCCGGGTTA | ((....(((((....)))))..))...... | 120.96375781136058  --> {'22': 1453} 
+seq3 (  27)| 0cb9a4a44c | GTTTGGTCTATTCATAGGCGTCCGGGTGAG | .....(((((....)))))........... | 115.94872776423759  --> {'22': 318} 
+seq4 (  60)| ae9b685dcd | GGTTTGGTCTATTCATAGGCGTCCGGGGGA | ((....(((((....)))))..))...... | 115.53259866237025  --> {'22': 87} 
+seq5 (  95)| 020fb5df18 | GGTTTGGTCTATTCATAGGCGTCCGCTGAG | ((....(((((....)))))..))...... | 115.32974200766219  --> {'22': 58} 
+seq6 ( 706)| 07c6cc9361 | GGTTTGGTCTATTCATAGGCGTCCGGGTGG | ((....(((((....)))))..))...... | 115.19018905327803  --> {'22': 4} 
+seq7 (1205)| 4446e485c5 | GGTTTGGTCTATTCATAGGCGTCCGGGTGT | ((....(((((....)))))..))...... | 115.18694762194484  --> {'22': 2} 
+seq8 (6105)| 695d2f88b1 | GGTTTGGTCTATTCATAGGCGTCCGGGTGC | ((....(((((....)))))..))...... | 115.15946483731275  --> {'22': 1} 
+seq9 ( 269)| 5bf90f09fc | GGTTTGGTCTATTCATAGGCGTCCGGGGTA | ((....(((((....)))))..))...... | 115.09458246010146  --> {'22': 15} 
+seq10 (1273)| 4465dcfcc6 | GGTTTGGTCTATTCATAGGCGTCCGGGTTG | ((....(((((....)))))..))...... | 115.08225853032911  --> {'22': 2} 
+seq11 ( 709)| 51403935e3 | GGTTTGGTCTATTCATAGGCGTCCGGGTCA | ((....(((((....)))))..))...... | 115.06604814910705  --> {'22': 4} 
+seq12 (3598)| e3c3398ccb | GGTTTGGTCTATTCATAGGCGTCCGGGTAG | ((....(((((....)))))..))...... | 115.04107105957854  --> {'22': 1} 
+seq13 (6360)| a05507bc9d | GGTTTGGTCTATTCATAGGCGTCCGGGTAA | ((....(((((....)))))..))...... | 115.03930271298259  --> {'22': 1} 
+seq14 (6240)| 72f5639a90 | GGTTTGGTCTATTCATAGGCGTCCGGGCAA | ((....(((((....)))))..))...... | 114.99371703053663  --> {'22': 1} 
+seq15 (4783)| a7a96ea587 | GGTTTGGTCTATTCATAGGCGTCCGGGGAG | ((....(((((....)))))..))...... | 114.99054849735629  --> {'22': 1} 
+seq16 ( 977)| ce9326e655 | GGTTTGGTCTATTCATAGGCGTCCGGGAGA | ((....(((((....)))))..))...... | 114.89342313471363  --> {'22': 3} 
+seq17 (3689)| a37b882a8c | GGTTTGGTCTATTCATAGGCGTCCGGGATA | ((....(((((....)))))..))...... | 114.89239213662538  --> {'22': 1} 
+seq18 (1158)| 45c0918dbc | GGTTTGGTCTATTCATAGGCGTCCGGTTTA | ((....(((((....)))))..))...... | 114.82807451032178  --> {'22': 2} 
+seq19 (  90)| 37a2b36de5 | GTTTGGTCTATTCATAGGCGTCCGGGTTAG | .....(((((....)))))........... | 114.69275390293771  --> {'22': 59} 
